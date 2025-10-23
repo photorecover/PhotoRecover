@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #e0e6f0;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3rem 0 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  border-radius: 0 0 20px 20px;
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.hero-image {
+  max-width: 280px;
+  width: 80vw;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 200, 255, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 6px #00d2ff;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #a0c9ff;
+  text-shadow: 0 0 8px #00aaff99;
+}
+
+/* Main content */
+main {
+  flex-grow: 1;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 2rem 0 3rem;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  color: #f0f4ff;
+}
+
+h2 {
+  color: #00caff;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #00aaff;
+  padding-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-left: 1.8rem;
+  position: relative;
+  color: #d0e8ff;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.85rem;
+  width: 12px;
+  height: 12px;
+  background-color: #00caff;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00caff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.2rem 0;
+  color: #7fbfffcc;
+  font-size: 0.95rem;
+  border-top: 1px solid #00446655;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 2px #0099ff33;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-image {
+    max-width: 90vw;
+  }
+}
